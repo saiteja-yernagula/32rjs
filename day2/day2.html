@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick='alert("executed throug inline")'>click me</button>
+    <!--
+
+    javascript 
+
+    how to integrate javascript
+    internal
+       js can be integrate using script tag at the bottom
+       of the body
+
+    external 
+      separate doc with .js extension can be linked
+      using script tag with the src attribute
+
+
+    inline
+    onClick="console.log('hi')"
+
+
+    variables
+    variables are like containers which is used to store 
+    data and the data could be any data type
+
+    varibale syntax
+    variables are defined with var , let ,const (keywords) and
+     automatic followed by variable name (identifiers)
+
+     identifieer have some rules
+     1) identifier can contain numbers , specialcha
+       but not at the first
+       12primary - not allowed
+       primary12
+    2) identifier can start with $ and _
+        _primary
+        $primary
+    3) identfier are case sensitive
+      primary
+      Primary
+      PRIMARY
+    4) reserved words cannot be used as identier names
+
+
+    variable syntax
+    keyword identifier="value"
+    var data="hello"
+
+    varaible terms
+    variable declartion
+       var a
+       var b
+
+    variable assignment
+    var a
+    a=10;
+
+    variable re assignment
+    var a;
+    a=10;
+    a=20;
+
+
+    variable initialisation
+    declaring and assigning a value on the same line
+    var a=10;
+    
+
+    undefined 
+     variable without an value
+
+    not defined 
+     variable is not declared at all
+
+
+     Hoisting
+     hoisting is a behaviour where the declarations
+     of the variables and functions are moved to top
+     even before execution
+
+
+     datatypes
+     1) primitive data types
+      a) which stores single values
+      b) get by value and pass by value
+      c) are immutable- we cannot change the values once assigned
+      d) stored in stack
+
+     2) non primitive data types
+      a) which stores multiple values
+      b) get by reference and pass by reference
+      c) are mutable- we can change the values once assigned
+      d) stored in heap
+
+      primitive data types -types
+      1) strings - collection of characters which 
+                   are enclose is ' ' or " " or ``
+        var str="hello world";
+      2) number - 
+      3) Boolean - true or false
+      4) undefined - varibal without an value
+      5) null- variable with no value
+
+      non primitive datatypes
+      1) array - collection of values of any data type
+        var arr=[1, "hello ", true , "html "]
+        values can be accesed through numbered indexing
+        start from 0
+    2) object
+       object are used to store data in key value pairs
+       obj={
+       key: value,
+       key : value
+       }
+
+        let obj={
+        batch:31,
+        id:7,
+        age:25
+       }
+       object values can be accessed with named index
+       obj.id
+       obj["id"]
+
+         
+
+    
+    
+    -->
+      
+    
+    <script>
+
+       var arr=[31, 7, 25];
+
+       let obj={
+        batch:31,
+        id:7,
+        age:25
+       }
+
+       obj.id=8
+       console.log(obj.id)
+    
+
+      
+        
+        
+    
+        
+
+
+
+        // alert("executed by internal")
+        
+        // console.log("hi")
+    </script>
+
+    <!-- <script src="demo.js"></script> -->
+</body>
+</html>
