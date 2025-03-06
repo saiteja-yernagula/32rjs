@@ -50,9 +50,11 @@ let a=982412;
 let str=String(a);
 let max=str[0]
 let min=str[0]//9
+minindex=0
 for(i=0;i<str.length;i++){
     if(str[i]<min){//2<1
         min=str[i]//min=1
+        minindex=i
     }
     if(str[i]>max){
         max=str[i]

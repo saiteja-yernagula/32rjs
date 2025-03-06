@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        /*
+        
+        functions
+        */ 
+
+
+      
+
+        // function greet(a="dear"){
+        //     console.log(`hello ${a}`)
+        // }
+        
+        // greet()
+        // greet("jeesy")
+
+        // function sqr(a){
+        //     return a*a
+        // }
+        // console.log(sqr(2))
+        // console.log(sqr(3))
+
+
+
+        // sum=0
+        // function avg(a){
+        //     for(i of a){
+        //         // console.log(i)
+        //         sum+=i
+
+        //     }
+        //     return sum/a.length
+
+        // }
+        
+        // console.log(avg([2,5,2]))
+        
+
+        // str="hell";
+
+        // function vowel(a){
+
+        //     for(i of a){
+        //         // console.log(i)
+        //         if(i=="a" || i=="e" || i=="i" || i=="o" || i=="u"){
+        //             return "contain vowels"
+        //         }
+        //     }
+        //     return "doesn't containe vowels"
+
+        // }
+        // console.log(vowel(str))
+
+
+        /*
+        1. func name stores function definiton
+        2. named functions can only be  hoisted
+        3. logging of the function calling print the return value
+        4. statement after return willl not execute
+        5. functions are called first call function, function def can acts as value and 
+        we can pass func definition as an argument
+
+        types of functions
+        1 named function
+        2 anonymous function- it is a function that is
+        defined without a funcion name
+
+        3.arrow function- 
+        it is more concise way of writing a function 
+        in simle syntax
+
+        data=(a)=>{console.log(a)}
+
+        data=a=>console.log(a)
+
+        data=a=>a //adds the return keyword by default
+
+        4. iife - immediate invoked function expression
+                  self invoking function
+                  it is function that is invoked as
+                  soon as it is defined
+
+                  (func defini)()
+
+        5. callback function
+        - callback fun is 
+        when a function defiinition is passed to another
+        function as an argument and later execute in
+        outer function 
+
+        6. higher order functions
+        when a function take one , more function as an
+        argument
+
+        scopes 
+
+
+
+
+
+        
+        */ 
+
+        // function one(a){
+        //     console.log("one")
+        //     // a(three)
+
+        // }
+        
+        
+        // function two(b){
+        //     setTimeout(() => {
+                
+        //         console.log("two")
+
+        //         b()
+        //     },1000);
+        // }
+
+        // function three(){
+        //     console.log("three")
+        // }
+
+
+        // one(two())
+        // // two()
+
+       
+
+        
+        // function css(b){
+        //     console.log("learning css")
+        //     b(react)
+        // }
+    
+        // function js(c){
+        //     console.log("learning js")
+        //     c()
+        // }
+
+        
+        // function react(){
+        //     console.log("learning react")
+        // }
+
+        // function html(a){
+        //     console.log("learning html")
+        //     a(js)
+        // }
+
+        // html(css)
+       
+
+        // products are added to the cart
+        // payment processed
+        // order succes
+        //delivered
+
+        // function cart(a){
+        //     console.log("products are added to cart")
+        //     a(success)
+        // }
+        
+        // function payment(b){
+        //     console.log("payment processed")
+        //     b(delivered)
+        // }
+
+        // function success(c){
+        //     console.log("order succes")
+        //     c()
+
+        // }
+
+        // function delivered(){
+        //     console.log("delivered")
+
+        // }
+
+        // cart(payment)
+
+        // higherorderfunction(callback,callback)
+
+
+
+        // console.log(a)
+        // var a=function (){
+        //     console.log("helloworld")
+        // }
+
+
+
+    
+        function one(a){
+            console.log("one")
+            a()
+        }
+        function two(){
+            console.log("two")
+        }
+        one(two,three)
+        hof(callback,callback)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // (function(){
+        //     console.log("hello world")
+        // })()
+        // var data=a=> a
+        
+        
+        // console.log(data(3))
+        // console.log(data)
+
+    </script>
+    
+</body>
+</html>
