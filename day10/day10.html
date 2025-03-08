@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*
+        types of functions
+        named functions
+        anonymous functions
+        arrow functions
+        self invoking -iife 
+        callback functions-when a func def is passed to anot fun as an arg asynchronous tasks-
+        hof- higher order functions 
+
+        var let const
+
+        variable terms
+
+
+
+        variabale declaration
+        var a
+        var a
+
+        assignment
+        var a
+        a=10;
+
+        reassignment
+        var a
+        a=10
+        a=20
+
+        initilization
+        var a=10;
+
+        hoisting
+        where the declarion of func and vari are moved to 
+        top even before executiuon
+
+        undefined
+        variable without value
+        var a
+        console.log(a)
+
+        not defined
+        variable not declared
+        console.log(b)
+
+
+        var 
+        can be redeclared
+        can be assigned(assignment  and reassignment are allowed)
+        can be hoisted and initiliazed with undefined
+        var have global scope and function scope
+
+        let
+        cannot be redeclared in the same scope
+        can be assigned(assignment  and reassignment are allowed)
+        let have global scope only when declared in global context
+                block scope and function scope
+
+        const
+        cannot be redeclared in the same scope
+        cannot be assigned (must be initialized at the time of declaration)
+        const have global scope only when declared in global context
+                block scope and function scope
+
+        hoisting 
+
+        scopes- life or accessibility of an variable
+        global scope
+        variables declared in global context can be used
+        anywhere in the code
+        var let const have global scope when declared in
+        global context
+
+        block scope 
+        varibale declared in the block cannot be 
+        accessed outside of the block
+
+        local scope or function scope
+        variables declared within a funciton cannot be
+        accessed outside of the function
+          
+
+
+
+        */ 
+
+        // const a=10;
+        // // console.log(a)
+
+        // const a=20;
+        // console.log(a)
+
+        // const a;
+        // a=10;
+       
+       
+        // console.log(a)
+        // console.log(a)
+        // let a=10;
+
+        // var a=10;
+        // let b=20;
+        // const c=30;
+        // console.log(a,b,c)
+ 
+
+
+        // const c=10
+        // {
+           
+        //     let b=20;
+        //     const c=30;
+        // }
+        // // console.log(c)
+
+
+        // function hello(){
+        //      a=10;
+        //     let b=20;
+        //     const c=30;
+
+        // }
+        // hello()
+        // console.log(a)
+       
+debugger;
+        // var a=10;
+        // let b=20;
+        // const c=30;
+        // console.log(a,b,c)
+
+        // let a=10
+
+        // {
+        //     let a=20
+        //     console.log(a)
+
+        // }
+
+        // function hello(){
+        //     let a=30
+        //     console.log(a)
+        // }
+        // console.log(a)
+        // hello()
+
+        //global execution context
+        var a=10
+        let b=20
+        const c=30
+        function hello(){
+            var a=40
+            console.log(a)
+        }
+        hello()
+
+        /*
+        var   redelcar      assig    hoisiting-und     global  
+        let   canot redcla   assgin  hois- but not init-tdz  block 
+        const  canot redclar cannot assing hois- but not init-tdz blck
+        */ 
+    </script>
+</body>
+</html>
