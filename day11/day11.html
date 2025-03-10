@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>primary heading 1</h1>
+    <h1 class="demo">primary heading 2</h1>
+    <h1>primary heading 3</h1>
+
+    <h2 class="demo">secondary heading</h2>
+
+    <p class="demo">content</p>
+
+    <div id="container">container</div>
+   <script>
+    /*
+    dom- document object model
+    1) dom is used to access and modify the content, 
+        styling and structure
+    2)  dom connects web pages to the scripting language
+    3) dom have methods(accessing) and properties(modificatios)
+
+    
+    
+    there are two way to creat an object
+    1) element level objects
+    2) document level objects- fieldnames
+
+    //how to access an elements-methods
+    1) document.getElementsByTagName("tagname")-
+    comes in collection and can be accesed using indexing
+    var heading1=document.getElementsByTagName("h1")[0]
+
+    2) document.getElementsByClassName("classname")
+    comes in collection and can be accesed using indexing
+    let a=document.getElementsByClassName("demo")[0];
+    console.log(a)
+
+    3) document.getElementById("container")- comes individual
+
+    4) document.querySelector("")
+    it is used to access the tagname, .classname and #id but 
+    only the first element
+
+    let a=document.querySelector(".demo");
+console.log(a)
+    5) document.querySelectorAll("tagname or .clss or #")
+    it is used to access the tagname, .classname and #id 
+    but comes in collection and can be accesed using indexing
+
+    let a=document.querySelectorAll(".demo");
+    console.log(a)
+
+    how to apply styles using dom
+    method[0].property="value";
+
+    var a=document.getElementsByTagName("h1")
+    a[0].style.propertyname="value"
+    a[0].style.color="red";
+    a[0].style.fontSize="20px";
+
+    how to access the content
+    1) .innerHTML
+    2) .textContent
+    3) .innerText
+    4) .value
+
+    how to modify content
+    a=method
+    a.property="newvalue"
+    a.innerHTML="modified content"
+
+
+
+    */ 
+//    console.log(document.title)
+// console.log(document.body)
+
+// console.log(heading1)
+// console.log(document.getElementsByTagName("h1")[1])
+// console.log(document.getElementsByTagName("h1")[2])
+
+// var parent=document.getElementById("container");
+// console.log(parent)
+
+// let a=document.querySelectorAll(".demo");
+// console.log(a)
+
+// var headings=document.getElementsByTagName("h1");
+// headings[0].style.color="red";
+// headings[1].style.color="blue";
+// headings[2].style.color="green";
+// headings[0].style.background="yellow"
+// headings[0].style.padding="20px";
+
+var a=document.querySelectorAll('p');
+a[0].innerHTML="<i>text modified</i>";
+// a[0].style.color="red"
+// console.log(a[0].innerHTML)
+// console.log(a[0].innerText)
+// console.log(a[0].textContent)
+   </script>
+
+
+    <script>
+        /*
+
+        var let const
+        scopes - global , block and function scope
+        global execution context
+
+        closures 
+       when an inner function having accessed to the variabe
+       which is declared in outer function even
+       after the execution of outer funciton
+
+        scope chaining
+        
+        */
+    //    function outer(){
+    //     var x = 10;
+    //     return function(){
+    //         console.log(x);
+    //     }
+    //    }
+    //    outer()()
+    //    outer()
+    //    console.log(outer())
+
+
+    // // let a=10;
+    // function hello(){
+    //     // let a=20;
+    //     {
+    //         // let a=30;
+    //         console.log(a)
+    //     }
+    // }
+    // hello()
+    </script>
+    
+</body>
+</html>
