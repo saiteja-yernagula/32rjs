@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1{
+            background-color: blue;
+            color:white;
+            padding:20px
+        }
+        
+
+        .demo{
+            display:none;
+        } */
+
+        body>div{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div>hello </div>
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+
+    <!-- <h1>primary heading</h1>
+    <button onclick="show()">toggle</button> -->
+    <!-- <button onclick="hide()">hide</button> -->
+
+
+    <script>
+        /*
+
+        how to create an element
+        var a=document.createElement("h1");
+        a.innerText="some content";
+        document.body.appendChild(a);
+        method.appendChild(a)
+
+        field names 
+        document.body head scripts title links anchors images forms 
+
+
+        how to add an attribute using dom
+        element.setAttribute("attr name", "attr value")
+        img.setAttribute("alt", "represent taj mahal image");
+        img.setAttribute("width", "200px")
+
+        how to add , remove and toggle classname to an element
+        element.classList.add("classname")
+        element.classList.remove("classname")
+        element.classList.toggle("classname")
+
+
+        
+        
+        
+        */ 
+
+        // let img=document.createElement("img");
+        // img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUJdgXt4IXKKu6I0gJ5n5_uzQgPCGg967d2w&s";
+        // // img.width="200px"--not allowed
+        // img.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUJdgXt4IXKKu6I0gJ5n5_uzQgPCGg967d2w&s")
+        // img.setAttribute("width", "200px");
+        // document.body.appendChild(img)
+        // console.log(img)
+
+        // var a=document.createElement("div");
+        // a.innerText="content";
+
+        // div.style.backgroundColor="blue";
+        // div.style.color="white";
+        // div.style.fontSize="40px";
+        // div.style.padding="5%";
+        // div.setAttribute("class", "demo m")
+        // div.setAttribute("class", "m")
+
+        // a.classList.add("demo")
+        // a.classList.add("m")
+        // a.classList.add("p")
+        // a.classList.add("p1")
+        // a.classList.remove("p")
+        // a.classList.remove("p1")
+        // a.classList.toggle("newclass")
+        // a.classList.toggle("newclass")
+
+        // let flag=true;
+        // function show(){
+        //     let heading=document.querySelector("h1");
+        //     if(flag){
+        //         heading.classList.add("demo")
+        //         flag=false;
+
+        //     }else{
+        //         heading.classList.remove("demo");
+        //         flag=true;
+        //     }
+        //     console.log(flag)
+        // }
+
+
+        // function hide(){
+        //     let heading=document.querySelector("h1");
+        //     heading.classList.add("demo")
+        // }
+
+
+        // var el1=document.getElementsByTagName("div");
+        // el1[0].innerText+=" john"
+        // el1[1].innerText+=" jane"
+        // el1[2].innerText+=" jessy"
+        // console.log(el1)
+        // let data=["john", "jenny", "jessy", "jane", "jack","john", "jenny", "jessy", "jane", "jack"]
+
+        // for(i=0;i<el1.length;i++){
+        //     el1[i].innerText+=" "+data[i]
+        //     // console.log(el1[i])
+        // }
+
+    let parent=document.createElement("div")
+
+    let titles=["title1", "title2", "title3","title4", "title5", "title6"]
+    let desc=["para1", "para 2" ,"para3","para4", "para 5" ,"para6"]
+    let imgs=["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3eYMxzaNDWHyVtMk5R_V6bo155zxjBipxQ&s", 
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUJdgXt4IXKKu6I0gJ5n5_uzQgPCGg967d2w&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3eYMxzaNDWHyVtMk5R_V6bo155zxjBipxQ&s", 
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUJdgXt4IXKKu6I0gJ5n5_uzQgPCGg967d2w&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3eYMxzaNDWHyVtMk5R_V6bo155zxjBipxQ&s", 
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUJdgXt4IXKKu6I0gJ5n5_uzQgPCGg967d2w&s",
+    ]
+
+    for(i=0;i<6;i++){
+
+        
+        
+        let child=document.createElement("div")
+        let title=document.createElement("h1")
+    let para=document.createElement("p")
+    let img=document.createElement("img")
+
+    title.innerText=titles[i];
+    para.innerText=desc[i];
+    img.src=imgs[i]
+    // img.setAttribute("src", imgs[i])
+    child.append(title,para,img)
+    parent.append(child)
+}
+document.body.append(parent)
+    
+    // console.log(parent)
+    // console.log(child)
+
+
+
+
+    </script>
+    
+</body>
+</html>
