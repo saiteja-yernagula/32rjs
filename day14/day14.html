@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+       background: blueviolet;
+       padding:20px;
+       color:white;
+
+        }
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="text" name="age" placeholder="Enter your age">
+        <button >click</button>
+    </form>
+    <!-- <div>content</div>
+    <button onclick="fun()">click</button> -->
+    <script>
+        /*
+        how to set an attribute 
+        method.setAttribute("attrname", "val")
+
+        var a=document.querySelector("img");
+        console.log(a.getAttribute("alt"))
+
+        how to add , remove and toggle classnames
+
+        how to create cards using loop
+        1.elements
+        2.create - content-outer append
+        3. loop
+
+        types of events
+        mouse events
+        click
+        dblclick
+        mouseover
+        mouseout
+        mousemove
+
+        keyboard events
+        keydown
+        keyup
+        keypress
+
+        form events
+        submit
+        reset
+        change
+        blur
+        focus
+        input
+
+        window events
+        load
+        resize
+        scroll
+
+        event handlers
+        are the functions in js that are responsible for handling specific
+        type of events
+
+        1. inline event handlers - associated with html
+        <button onclick="fun()">click</button>
+
+        2.dom event handlers - associated with dom 
+        using addEventListener("type of event", callback fun) method
+
+
+        
+
+        
+        */ 
+        // var a=document.querySelector("div");
+        // a.classList.toggle("demo")
+        //  a.classList.toggle("demo")
+        //  a.classList.toggle("demo")
+        // // a.classList.add("demo1")
+        // // a.classList.remove("demo1")
+        // console.log(a)
+        // let colors=["blue", "green", "yellow", "red", "violet"]
+        // count=0
+        // function fun(){
+        //     var a=document.querySelector("div");
+        //     // console.log(Math.floor(Math.random()*colors.length))
+        //     a.style.background=colors[count];
+        //     count++
+        //     if(count==colors.length){
+        //         count=0
+        //     }
+        // }
+
+        // let btn=document.createElement("button");
+        // let btn1=document.createElement("button");
+    
+        // btn.innerText="click";
+        // btn1.innerText="click2";
+        // btn.setAttribute("onclick", "fun()" )
+        // btn.addEventListener("click", chng)
+
+        // btn1.addEventListener("click", chng)
+
+        // function chng(){
+        //     document.body.style.background="blue";
+        // }
+        // btn.addEventListener("dblclick", function(){
+        //     document.body.style.background="green";
+        // })
+
+        // btn.addEventListener("mousemove", function(){
+        //     document.body.style.background="black";
+        // })
+
+
+        // document.body.append(btn,btn1)
+        // console.log(btn)
+
+      let   btn=document.querySelector("button")
+      btn.addEventListener("click", function (){
+        let inp1=document.getElementsByTagName("input")[0]
+        let inp2=document.getElementsByTagName("input")[1]
+console.log(inp1.value,inp2.value)
+
+      })
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .demo{
+            background-color: blue;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>primary heading</h1>
+    <button onclick="fun()">click me</button>
+   <script>
+    var heading =document.querySelector("h1");
+    function fun(){
+
+        heading.classList.toggle("demo")
+        console.log(heading)
+    }
+
+
+   </script> 
+</body>
+</html>
