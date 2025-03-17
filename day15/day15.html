@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            background-color:green;
+        }
+        #inner{
+            background-color:red;
+            width: 50%;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner">
+            click
+        </div>
+    </div>
+    <!-- <form action="">
+        <input type="text" id="inp1" placeholder="enter ur password"> 
+    !-- <input type="text" id="inp2" placeholder="confirm ur password"> -->
+        <!-- <button>submit</button>
+
+        <div id="matched">both are matched</div>
+        <div id="notmatched">both are not matched</div>
+    </form> -->
+
+    <!-- 
+    event bubbling
+    event capturing
+    how to prevent event bubbling
+    
+    -->
+
+    <script>
+        /*
+
+        types of events
+        1. mouse events
+        2. keyboard events
+        3. form events
+        4. window events
+
+        event handlers
+        1 . inline event handlers- onclick="fun()"
+        2. dom event handlers- method.addEventListener("typeofevetn", callback)
+
+        forms
+        1. using methods - by id ,by quersy
+        2. using fieldnames- document.forms[0]
+        3. using target - e.target[0].value
+
+
+
+        
+        
+        */ 
+    //    let inp1=document.getElementById("inp1")
+    //    let inp2=document.getElementById("inp2")
+    //    let btn=document.querySelector("form")
+    //    btn.addEventListener("submit",function(e){
+    //        e.preventDefault()//used to prevent the default submission of form
+       
+    //    if( e.target[0].value==e.target[1].value){
+    //     document.getElementById("matched").style.display="block";
+    //     document.getElementById("notmatched").style.display="none"
+
+    //    }else{
+    //     document.getElementById("notmatched").style.display="block";
+    //     document.getElementById("matched").style.display="none";
+
+
+    //    }
+    //        console.log(e.target[0].value)
+    //     console.log(e.target[1].value)
+
+    //     e.target[0].value="";
+    //     btn.reset()
+    //     // console.log(inp1.value)
+    //     // console.log(inp2.value)
+    //    })
+
+    // document.body.addEventListener("keyup", function(e){
+    //     console.log(e.key)
+    //     if(e.key=="Enter"){
+    //         document.body.style.background="red"
+    //     }
+    // // })
+
+    // let colors=["red", "green", "blue", "yellow"]
+    // count=0
+    //    let inp1=document.getElementById("inp1")
+    //    inp1.addEventListener("input", function (){
+    //     document.body.style.background=colors[count]
+    //     console.log(inp1.value)
+    //     count++
+    //    })
+    
+
+    // window.addEventListener("scroll", function(){
+    //     console.log(window.scrollY)
+    //     if(window.scrollY>500){
+    //         document.body.style.background="red"
+    //     }
+    // })
+    let parent=document.getElementById("outer")
+    let child=document.getElementById("inner")
+
+    parent.addEventListener("click", function(){
+        console.log("parent clicked")
+    }, true)
+
+    child.addEventListener("click", function(){
+        //  e.stopPropagation()
+        console.log("child clicked")
+    })
+
+    // 1   2    3    4  5
+
+    </script>
+    
+</body>
+</html>
