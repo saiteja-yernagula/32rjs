@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        string methods
+
+        string- collection of characters which are enclosed
+        in single or double quotes
+
+
+         var str="hello world"
+         var str='hello world'
+         var str= `hello world`-- string interpolation
+
+         template literals
+         it allows us to ember a variables or expressions
+         into the string
+
+         `content ${variablename or expression}`
+
+         a="js"
+         var str=`hello ${a}`;
+         console.log(str)
+
+
+         string are immutable in js
+         we cannot change thev alues on
+         var str="hello";
+         str[0]="b"
+         console.log(str)
+
+         string methods
+         1. str.length
+           it returns the no of characters in a string
+           which also includes spaces, special charcters
+         
+         hello
+         12345
+         01234
+
+         str="hello"
+         console.log(str[str.length-1])
+
+ var str='hello world'
+         console.log(str.length)
+
+
+         2. str.charAt()
+         it returns the character at the specified index
+        var str='hello world'
+         console.log(str.charAt(1))
+         3.str.at()
+         returns the character at specified index
+         also takes the  negative index values
+ var str='hello world'
+         console.log(str.at(-11))
+
+         4. str.charCodeAt(0)
+         returns the ascii value of an character
+         at specified index
+         var str='Ahello world'
+         console.log(str.charCodeAt(0))
+         console.log(String.fromCharCode(115))
+
+         5.str.slice(startindex, end index)
+          it is used to extract a part of string
+          negatvies also allowed
+   var str='hello world';
+        console.log(str.slice(0,4))
+
+        6. str.substring(startinde,endindex)
+        it is used to extract a part of string
+        but negative values are considered as 0
+
+        7. str.substr(start, length)
+        it is used to extract a part of string
+        but second parameter is length instead of end index
+
+
+        8. str.toUpperCase()
+        used to convert all characters in a string to uppercase letters.
+           str.toLowerCase()
+
+       9. str.trim()
+       used to remove whitespace from both ends of a string.
+           var str=prompt("enter").toLowerCase().trim();
+          // var str="     hello world            "
+          console.log(str)
+
+          10.concat
+          used to concatenate two strings
+          var str1="hello "
+          var str2="world"
+          var str3="js"
+          console.log(str1.concat(str2,str3))
+        
+          11. str1.repeat(3)
+
+          12.str.split("separator")
+          used to split a string into an array of substrings
+
+          var str="hello "
+           console.log(str.split("").reverse().join(""))
+ 
+           var str1="hello@ wo@r @ld";
+           console.log(str1.split(""))//[]
+
+           13. replace and replaceAll
+           used to replace a substring with another substring
+           var str="hello World World";
+           console.log(str.replace(/world/ig, "js"))
+
+           search methods
+           1. str.indexOf("h")
+           2. str.lastIndexOf()
+           3. str.search()
+           4. str.includes()
+           5. str.match()
+         */
+
+         var str="hello world";
+         console.log(str.indexOf("z",5))
+         console.log(str.lastIndexOf("o"))
+         console.log(str.search("wor"))
+         console.log(str.match(/[aeiou]/ig))
+         console.log(str.includes("hez"))
+
+
+    </script>
+</body>
+</html>
