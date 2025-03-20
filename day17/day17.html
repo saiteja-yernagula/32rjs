@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        
+        // string methods
+
+        // array methods
+
+        array
+        array is a special type of an object
+        used to store multiple values
+        
+        features of an array
+        1. order collection
+        2. homogenous and heterogenous
+        3. mutable
+        4. dynamic sizing
+        5. multi dimensional array
+
+        how to creat an arrau
+      
+        let a=["hello world", 1, true, {name:"john"}, [2,3]]
+
+        how to access an array
+        console.log(a)//["hello world", 1, true, {name:"john"}, [2,3]]
+
+        how to access an particular elements- numbered index
+        console.log(a[0])//hello world
+
+        how to modify
+        a[0]="javascript"
+        console.log(a)//["javascript", 1, true, {name:"john"}, [2,3]]
+
+        how to add new element
+        a[5]="new element";
+        console.log(a)//["javascript", 1, true, {name:"john"}, [2,3], "new element"]
+
+
+        nested array
+        let arr=[1,2,[3,[[6,[7]],5],6]]
+        console.log(arr1[2][1][0][1][0])
+
+        array methods
+        1. arr.length- returns the number of elements in the array
+        2. arr.at(0) - returns the element at the specified index also takes 
+               negative indexing
+        3. arr.concat(arr1,arr2) - used to add one or more arrays
+        4. splice
+
+            arr.splice(startindex, deletecount, item1, item2, item3)
+            let arr=["html", "css", "javascript"];
+            //add
+            arr.splice(1, 0, "git");
+            arr.splice(3, 0,"bootstrap")
+            //modify
+            arr.splice(3,1, "tailwindcss")
+            //delete and add
+            arr.splice(0,arr.length,"java", "python", "nodejs", "mongodb")
+     
+            console.log(arr)
+
+        5. arr.slice("startind", "endind")- returns a shallow copy of a portion of an array
+  
+       let arr=["html", "css","js","nodejs", "pyhton", "java"]
+       console.log(arr.slice(2,4))
+
+        6.arr.pop()- removes the last element of an array
+
+        7. arr.push()- add the new element to an array at the end index
+        and returns the new length of the array
+             
+       let arr=["html", "css","js","nodejs", "pyhton", "java"]
+       
+       console.log(arr.push("react","mysql"))
+        console.log(arr)
+
+        8. arr.shift()- removes the first element of an array and returns
+        that element
+
+        9. arr.unshift()- 
+        method adds one or more elements to the beginning of an array and
+         returns the new length of the array.
+
+          let arr=["html", "css","js","nodejs", "pyhton", "java"]
+       
+      console.log(arr.shift(2));
+      console.log(arr)
+      
+
+      10 . arr.sort()- sorts the elements of an array in assecending order
+      and returns the array
+      sorts the elements in lexico graphical ordering
+      let arr=[21,22,3,5,1,12,4,11,2];
+       console.log(arr.sort())
+       let arr=["ramu","ajith", "Ajith","ramesh","balu" ];
+       console.log(arr.sort())
+
+       11. arr.reverse()
+       method reverses the order of the elements in an array, and 
+       returns the array.
+
+       12.arr.join(separator)- 
+       returns a string separated by the separator- convrt array to string
+       
+       13 arr.toString()
+       method returns a string with all elements separated by commas
+
+       14. arr.copyWithin()
+
+       15. arr.flat()
+
+
+
+
+     
+        */
+    //    let arr2=["nodejs", "pyhton", "java"]
+       // let arr3=["nodejs", "pyhton", "java"]
+       // console.log(arr.concat(arr2,arr3))
+    //    let arr=["ramu","ajith", "ajith","ramesh","balu", {name:"john"},{age:25} ];
+    //    console.log(arr.sort())
+       
+
+    let arr=[1,2,[3,[[6,[7]],5],6]]
+    console.log(arr.flat(Infinity))
+
+
+      
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
