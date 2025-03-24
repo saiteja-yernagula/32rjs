@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body>div{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap:5%;
+
+        }
+        body>div>div{
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /*
+        
+        array iteration and transformation methods
+        1. arr.forEach()
+           it is used for iterating an array
+           it perform operation on existing array
+           it does not return any value
+           it executes a provided function for each
+           element in an array
+           arr=["el1","el2","el3"]
+           syntax
+           arr.forEach((value,index,sourcearray)=>{
+           console.log(value)
+           el1
+           el2
+           el3
+           console.log(index)
+           0
+           1
+           2
+           console.log(sourcearray)
+           ["el1","el2","el3"]
+           ["el1","el2","el3"]
+           ["el1","el2","el3"]
+           })
+
+map
+        1. it is used for iteration and trasformation
+        2. it perform operation on new array
+        3. it return the result with the transformed array
+        4. it executes a provided function once for each 
+            element in an array
+        5. it returns boolean values when used with
+           the conditon
+
+        filter
+        1. it is used for filtering an array
+
+
+
+
+        */ 
+
+        // arr=["el1","el2","el3"]
+
+        // ar=arr.forEach(val=>console.log(val))
+
+
+        // let arr=[1,2,3,4,5,6,7,8,9]
+
+        // let newarr=arr.map((val,ind,src)=>{
+          
+        //     return val<5
+
+        // })
+        // console.log(newarr)
+
+        // let newarr=arr.filter((val,ind,src)=>{
+        //     return val%2!=0
+
+        // })
+        // console.log(newarr)
+
+        let arr=[
+            {name:"john",age:20},
+            {name:"jessy",age:19},
+            {name:"jane",age:25},
+            {name:"jenny",age:22},
+            {name:"jack",age:22},
+
+        ]
+       
+        container=document.createElement("div")
+
+        arr.forEach((val)=>{
+        child=document.createElement("div");
+        title=document.createElement("h3");
+        age=document.createElement("p");
+
+        title.innerText=val.name
+        age.innerText=val.age
+
+        console.log(child)
+        
+
+            // console.log(val.name)
+            // console.log(val.age)
+
+            child.append(title,age)
+            container.append(child)
+        })
+        document.body.append(container)
+    </script>
+</body>
+</html>
