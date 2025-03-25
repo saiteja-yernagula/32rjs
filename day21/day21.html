@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+
+        array iteration and transformation methods
+        1. forEach() - iteration, existing, no return value
+        2. map()- iteration and transformation,new array, returns transformed array, returns boolean values -cond
+        3. filter()- filtration, new array, filtered array
+        4. reduce()
+        5. sort()
+
+        arr.sort((a,b)=>{
+       return a-b
+        })
+
+        6.some()
+
+        
+
+
+        
+        */ 
+
+        // let arr=[9,4,10,1,21,3,3]
+
+        // arr.sort((a,b)=>{
+        //     return a-b
+
+        // })
+
+        // console.log(arr)
+        //9-4=5
+
+        // newarr=arr.map((val)=>{
+        //   sum+=val
+
+        // })
+        // console.log(sum)
+
+
+        // let newarr=arr.reduce((acc,val,ind,src)=>{
+        //     return val+acc
+        // },0)
+
+        // console.log(newarr)
+
+        let arr=[1,2,3,4,5,6,7,8,9]
+        let newarr=arr.every((val)=>{
+            return val<9
+
+        })
+        console.log(newarr)
+    </script>
+</body>
+</html>

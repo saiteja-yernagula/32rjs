@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="hello()">clic</button>
+    <script>
+        /*
+        bom- browser object model
+        window objects
+
+        1) window.alert("")
+           window.prompt("")
+           window.confirm("")- returns boolean values
+           window.open("url","_self", "height=100,width=100")
+           window.close()
+           window.innerWidth
+           window.innerHeight
+
+
+
+
+        navigator objects
+
+        screen objects
+
+        location objects
+
+        history objects
+        
+        
+        */ 
+
+    //    function hello(){
+    //     setTimeout(function(){
+    //         window.open("https://fakestoreapi.com/products/")
+    //     } , 5000);
+    //    }
+    //    hello()
+
+
+    console.log(window.innerHeight)
+    console.log(window.innerWidth)
+
+    if(window.innerWidth<500){
+        document.body.style.background="red"
+    }
+    function hello(){
+        if(window.confirm("are you really want to exit")){
+
+            window.close()
+        }
+        
+        // window.open("https://en.wikipedia.org/wiki/Main_Page","_blank", "height=300,width=300")
+    }
+    </script>
+</body>
+</html>
