@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>firsst Main_Page</h1>
+    <a href="page2.html">click to route</a>
+    <script>
+        /*
+        bom - browser object model
+        window objects
+        window.alert()
+        prompt
+        confirm
+        open
+        close
+        window.innerHeight
+        window.innerWidth
+
+
+        navigator objects
+               if(navigator.onLine){
+        console.log("connected to internet")
+       }
+       else{
+        console.log("not connected to internet")
+       }
+
+       if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(function(position){
+            console.log(position.coords.latitude)
+            console.log(position.coords.longitude)
+        })
+       }
+
+       console.log(navigator.userAgentData)
+
+       console.log(navigator.cookieEnabled)
+
+       console.log(navigator.platform)
+
+       3) screen objects
+       screen.width
+       screen.height
+       screen.colorDepth
+       screen.pixelDepth
+
+       4) history objects
+       history.back()
+       history.forward()
+       history.go(2 or -3)
+
+       5) location objects
+        console.log(location.protocol)
+       console.log(location.hostname)
+       console.log(location.pathname)
+       console.log(location.href)
+
+
+
+       how to use localstorage
+
+
+       how to store
+       localStorage.setItem("key","value1")
+       localStorage.setItem("key","value2")
+
+       how to get
+       localStorage.getItem("key")
+
+
+       let obj={
+       name:"john"
+       }
+
+       localStorage.setItem("std", JSON.stringify(obj))
+     data=JSON.parse(localStorage.getItem("std"))
+
+    
+
+
+
+
+
+
+        
+
+        */ 
+       let a="rahul"
+       let b="32r"
+      
+
+       let obj={
+        name:a,
+        batch:b,
+       }
+    //    how to store data in localstorage
+
+        localStorage.setItem("studentkey",JSON.stringify(obj))
+
+        // 1) get the form details
+        // 2) store form details in an object
+        //3) push the obj into the arra
+        // 4) store the array in localstorage
+        // 5) get the array from localstorage 
+        //6) display using forEach()
+
+       
+
+    </script>
+</body>
+</html>
