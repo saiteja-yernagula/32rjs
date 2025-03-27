@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp1">
+    <input type="text" id="inp2">
+    <button onclick="postdata()">post</button>
+
+    <a href="newpage.htm">view users</a>
+
+    <script>
+        /*
+        form
+        obj
+        arr
+        local
+        get
+        cards
+        
+        */
+       let emparr=JSON.parse(localStorage.getItem("form32r"))|| []
+       
+       
+       function postdata(){
+            var inp1 = document.getElementById("inp1").value;
+            var inp2 = document.getElementById("inp2").value;
+            
+            let obj={
+                name:inp1,
+                age:inp2
+            }
+            emparr.push(obj)
+            console.log(emparr)
+            localStorage.setItem("form32r",JSON.stringify(emparr))
+        }
+    </script>
+</body>
+</html>

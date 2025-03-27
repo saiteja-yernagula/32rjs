@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="notification">
+        
+    </div>
+    <button onclick="fun()">show</button>
+
+    <div id="timer">10</div>
+    <button onclick="stopwatch()">show</button>
+    <script>
+        /*
+
+        timing functions 
+        1. setTimeout()
+        it executes a block of code aftet a speified
+        time interval
+
+       let a= setTimeout(()=>{
+        },timing in milliseconds)
+
+
+        2. setInterval()
+
+        setInterval(callback,time in milliseconds)
+        
+
+        3. clearTimeout(a)
+        4. clearInterval(a)
+        */ 
+       
+
+    //    let a= setTimeout(()=>{
+    //         console.log("set an alarm");
+    //         ;
+    //     },5000)
+
+
+    //   let a=  setInterval(()=>{
+    //         console.log("setInterval executed");
+    //         console.log("hello ");
+    //     },2000)
+
+
+        // function fun(){
+        //     clearTimeout(a)
+        
+        // }
+
+        // function fun(){
+        //     let div=document.querySelector("div")
+        //     div.style.display="block"
+
+        //     setTimeout(()=>{
+        //         div.style.display="none"
+        //     },2000)
+
+        // }
+
+        const messages = ["Loading resources...", "Connecting to the server...", "Almost there...", "Done!"];
+
+
+        count=0
+        function fun(){
+           let div= document.querySelector("div")
+           div.innerText=messages[count]
+           count++
+           let a=setTimeout(fun,1000)
+           if(count==messages.length){
+            clearTimeout(a)
+
+
+           }
+
+
+        }
+ timer=10
+        
+        let a=setInterval(()=>{
+            let div=document.getElementById("timer")
+            div.innerText=timer
+            timer--
+            if(timer<0){
+                clearInterval(a)
+            div.innerText="times up"
+            }
+        },1000)
+
+    </script>
+    
+</body>
+</html>
