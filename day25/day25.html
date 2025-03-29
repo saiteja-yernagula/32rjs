@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        synchronous and asynchronous
+
+        event loop mechanism
+
+        aynchronous operations
+        callbacks
+        promises
+        async/await
+
+
+        callback
+        when a function definition is passed to another fun
+        as an argument and later on execute on the outer function
+
+        waking up
+        freshup and breakfast
+        attending the class
+        lunch
+        pracice / task
+        sleep
+        
+        
+        */
+
+        // function wakeup(callback){
+        //     console.log("waking up");
+        //     callback()
+        // }
+
+        // function freshup(callback){
+        //     console.log("fresh up and breakfast");
+        //     callback()
+        // }
+        // function cls(callback){
+        //     console.log("attending the class");
+        //     callback()
+        // }
+
+
+
+        // function practice(callback){
+        //     console.log("practice and task ");
+        //     callback()
+        // }
+
+
+
+        // function lunch(callback){
+        //     console.log("lunch break");
+        //     callback()
+        // }
+
+
+        // wakeup(()=>{
+        //     freshup(()=>{
+        //         cls(()=>{
+        //             lunch(()=>{
+        //                 practice(()=>{
+        //                     sleep()
+        //                     console.log("day completed")
+        //                 })
+        //             })
+        //         })
+        //     })
+        // })
+
+
+        // function sleep(){
+        //     console.log("sleeping");
+        // }
+
+
+
+        // function first(callback){
+        //     console.log("first");
+        //     callback()
+        // }
+
+
+        // function second(callback){
+        //     console.log("second");
+        //     callback()
+        // }
+
+        // function third(){
+        //     console.log("third");
+        // }
+
+        // first(()=>{
+        //    second(()=>{
+        //     third()
+        //    })
+        // })
+
+
+
+
+
+        // function js(){
+
+
+        //     setTimeout(() => {
+
+        //         console.log("js");
+        //     }, 2000);
+        // }
+
+        // function css(callback){
+
+        //     setTimeout(() => {
+        //         console.log("css");
+        //         callback()  
+        //     }, 5000);
+
+        // }
+
+
+        // function html(a){
+
+        //     setTimeout(() => {
+        //         console.log("html");
+        //     a() 
+        //     }, 2000);
+
+        // }
+
+        // html(()=>{
+        //     css(()=>{
+        //         js()
+        //     })
+        // })
+
+
+
+        // 10    20     15    30    10    
+
+        function sum(val, callback) {
+            callback(val + 10)
+        }
+
+
+        function sub(val, callback) {
+            callback(val - 5)
+        }
+
+        function mul(val, callback) {
+            callback(val * 2)
+        }
+
+        function div(val, callback) {
+            callback(val/3)
+        }
+
+
+        sum(10, (addres)=>{
+            sub(addres,(subres)=>{
+                mul(subres,(mulres)=>{
+                    div(mulres,(divres)=>{
+                        console.log(divres)
+
+                    })
+
+                })
+
+            })
+        })
+
+       
+    </script>
+</body>
+
+</html>
