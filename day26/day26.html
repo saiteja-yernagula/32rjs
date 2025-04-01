@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+
+        callback functions
+
+        callback hell or pyramid of doom
+
+        promises
+        it represents the eventual completion or failure of an async
+        operation
+
+        promises have three states
+        resolved - fullfilled - success
+        rejected - failed
+        pending - not yet completed
+
+        how to create a promise - syntax
+        let prom=new Promise((res,rej)=>{
+        a=10;
+        if(a==10){
+        res("it is resolved")
+        }else{
+        rej("it  is rejected")}
+        })
+
+
+        how to consume a promise
+        1. using .then .catch
+        2. using async await
+
+        prom
+        .then((val)=>{
+        console.log(val)
+        }).catch((err)=>{
+        console.log(err)
+        })
+
+
+        
+
+        */
+       
+        // let a=new Promise((resolve,reject)=>{
+        //     let b=10
+        //     if(b==100){
+        //         resolve("it is resolved")
+        //     }
+        //     else{
+        //         reject("it is rejected")
+        //     }
+
+        // })
+
+        // a.then((val)=>{
+        //     console.log(val)
+        // }).catch((err)=>{
+        //     console.log(err)
+        // })
+
+        let first=new Promise((res)=>{
+            res("learning html")
+        })
+
+        let second=new Promise((res)=>{
+
+            setTimeout(() => {
+                
+                res("learning css")
+            }, 4000);
+        })
+
+        let third=new Promise((res)=>{
+            res("learning js")
+        })
+
+        // first.then((val)=>{console.log(val)})
+        // second.then((val)=>{console.log(val)})
+        // third.then((val)=>{console.log(val)})
+
+
+        // first.then((val)=>{
+        //     console.log(val)
+        //     return second
+        // }).then((val)=>{
+        //     console.log(val)
+        //     return third
+        // }).then((val)=>{
+        //     console.log(val)
+        // // })
+
+
+
+        // function sum(val){
+        //     return new Promise((res)=>{
+        //         res(val+10)
+        //     })
+        // }
+
+        // function sub(val){
+        //     return new Promise((res)=>{
+        //         res(val-5)
+        //     })
+        // }
+
+        // function mul(val){
+        //     return new Promise((res)=>{
+        //         res(val*3)
+        //     })
+        // }
+
+        // function div(val){
+        //     return new Promise((res)=>{
+        //         res(val/3)
+        //     })
+        // }
+
+        // sum(10)
+        // .then((addres)=>sub(addres))
+        // .then((subres)=>mul(subres))
+        // .then((mulres)=>div(mulres))
+        // .then((finalres)=>console.log(finalres))
+
+        // sum(10).then((addres)=>sub(addres))
+        // .then((subres)=>mul(subres))
+        // .then((mulres)=>div(mulres))
+        // .then((divres)=>console.log(divres))
+
+
+
+        let a =new Promise((res,rej)=>{
+            setTimeout(() => {
+            res("it is resolved a")  
+            }, 4000);
+        })
+
+        let b =new Promise((res,rej)=>{
+            setTimeout(() => {
+            res("it is resolved b")  
+            }, 1000);
+        })
+
+        let c =new Promise((res,rej)=>{
+            setTimeout(() => {
+            res("it is resolved c")  
+            }, 3000);
+        })
+
+
+        // a.then((val)=>console.log(val))
+
+        // b.then((val)=>console.log(val))
+
+        // c.then((val)=>console.log(val))
+     
+
+        Promise.race([a,b,c])
+        .then((val)=>console.log(val))
+        
+        Promise.all([a,b,c])
+        .then((val)=>console.log(val))
+        
+    </script>
+</body>
+</html>
