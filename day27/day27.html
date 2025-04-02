@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        promises
+        to handle asyn operations and to prvent callback hell
+
+        promises have three states
+        pending
+        fulfilled
+        rejected
+
+        creating a promise
+        var a=new Promise((res,rej)=>{
+
+        //block of code
+        res(value); //fulfilled
+
+        rej(value)//rejected
+        })
+
+        consuming a promise
+        1. .then( )catch
+        2. aysnc await
+
+        
+        */ 
+
+        let html=new Promise((res)=>{
+            
+            res("learning html")
+
+        })
+
+        let css=new Promise((res)=>{
+
+            setTimeout(() => {
+                
+                res("learning css")
+            }, 3000);
+
+        })
+
+        let js=new Promise((res)=>{
+            res("learning js")
+        })
+
+        // html.then((val)=>console.log(val))
+        // css.then((val)=>console.log(val))
+        // js.then((val)=>console.log(val))
+
+
+        // html.then((val)=>{
+        //     console.log(val)
+        //     return css
+        // }).then((val)=>{
+        //     console.log(val)
+        //     return js
+        // }).then((val)=>{
+        //     console.log(val)
+
+        // })
+
+
+        // async function getdetails(){
+        //     let a=await html
+        //     console.log(a)
+        //     let b=await css
+        //     console.log(b)
+        //     let c=await js
+        //     console.log(c)
+        // }
+        // getdetails()
+
+
+
+        function sum(val){
+            return new Promise((res)=>{
+                res(val+10)
+            })
+        }
+
+        function sub(val){
+            return new Promise((res)=>{
+                res(val-5)
+            })
+        }
+
+        function mul(val){
+            return new Promise((res)=>{
+                res(val*2)
+            })
+        }
+
+        function div(val){
+            return new Promise((res)=>{
+                res(val/2)
+            })
+        }
+
+
+        // sum(10)
+        // .then((addres)=>console.log(addres))
+
+        // sum(10)
+        // .then((addres)=>sub(addres))
+        // .then((subres)=>mul(subres))
+        // .then((mulres)=>div(mulres))
+        // .then((finalres)=>console.log(finalres))
+
+
+        // async function getdetails(){
+        //     let a= await sum(10)
+        //     let b=await sub(a)
+        //     let c=await mul(b)
+        //     let d=await div(c)
+        //     console.log(d)
+        // }
+        // getdetails()
+
+        /*
+        how to deploy json server - render
+        how to use cloudinary - images nd videos store
+        how to use glitch and mock api
+        js libraries- leaflet, swiper js
+        */ 
+
+        // let a=fetch("https://api.weathermap.org/data/2.5/weather?q=hyderabad&units=metric&appid=466ddaa21a8de191e9f608bd11a56acb")
+       
+        // a.then((val)=>val.json())
+        // .then((val)=>console.log(val.main.temp))
+        // .catch((err)=>console.log("error"))
+
+        async function getdetails(){
+            try{
+            let data=await fetch("https://api.weathermap.org/data/2.5/weather?q=hyderabad&units=metric&appid=466ddaa21a8de191e9f608bd11a56acb")
+            let res=await data.json()
+            console.log(res.main.temp)
+            }catch(err){
+                alert("error in api plz check")
+            }
+        
+        }
+        getdetails()
+    </script>
+</body>
+</html>
