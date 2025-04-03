@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "city": "nizamabad",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Jane",
+      "age": 25,
+      "city": "hyderabad"
+    },
+    {
+      "id": 4,
+      "name": "Alice",
+      "age": 35
+    },
+    {
+      "name": "rahul",
+      "age": 22,
+      "id": 5
+    },
+    {
+      "city": "nizamabad",
+      "id": 6
+    },
+    {
+      "name": "rahul",
+      "age": 22,
+      "id": 7
+    },
+    {
+      "name": "rahul",
+      "age": 22,
+      "id": 8
+    },
+    {
+      "name": "rahul",
+      "age": 22,
+      "id": 9
+    }
+  ],
+  "emp": [
+    {
+      "id": 1,
+      "name": "teja"
+    },
+    {
+      "id": 2,
+      "name": "sai"
+    }
+  ]
+}

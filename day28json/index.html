@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getdata()">get data</button>
+    <button onclick="postdata()">post data</button>
+
+    <button onclick="putdata()">putdata</button>
+    <button onclick="patchdata()">patchdata</button>
+    <button onclick="deletedata()">deletedata</button>
+    <script>
+
+        async function getdata(){
+            let data=await fetch("http://localhost:3000/data")
+            let res=await data.json()
+            console.log(res)
+        }
+
+   
+
+
+        let obj={
+        name:"rahul",
+        age:22
+    }
+        async function postdata(){
+        let data=await fetch("http://localhost:3000/data", {
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify(obj)
+        })   
+    }
+
+    async function putdata(){
+        let obj={
+            city:"nizamabad"
+        }
+        let id=6
+        let data=await fetch(`http://localhost:3000/data/${id}`, {
+            method:"PUT",
+            headers:{
+                "Content-Type":"application/json",
+            },
+            body:JSON.stringify(obj)
+
+
+        })
+    }
+
+    async function patchdata(){
+        let obj={
+            city:"hyderabad"
+        }
+        let data=await fetch("http://localhost:3000/data/2",{
+            method:"PATCH",
+            headers:{
+                "Content-Type":"application/json",
+            },
+            body:JSON.stringify(obj)
+        })
+
+    }
+
+
+    async function deletedata(){
+        let data=await fetch("http://localhost:3000/data/3",{
+            method:"DELETE"
+        })
+    }
+    </script>
+    
+</body>
+</html>
