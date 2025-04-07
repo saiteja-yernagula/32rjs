@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        this keyword 
+        call apply bind
+        constructor function
+        
+        oops
+
+        object oriented programming structure
+        it is a way of writing a code in more modular
+        and reusable manner
+        it includes
+        class
+        constructor
+        object
+        encapsulation
+        inheritance
+        polymorphism
+        abstraction
+
+        class is used to create template for an object
+        class have properties(state) and methods(behaviour)
+
+        syntax
+        class Classname{
+        property1
+        property2
+
+        constructor(){
+        this.property1 = value1
+        this.property2 = value2
+        }
+
+        methodname(){
+        //code
+        }
+
+        }
+
+
+
+        */
+
+        // class Marker{
+        //     type
+        //     color
+        //     lid
+        //     constructor(a,b,c){//initialize the properties 
+        //         this.type=a
+        //         this.color=b
+        //         this.lid=c
+        //     }
+        //     //method
+        //     writing(){
+        //         console.log(`writing with ${this.color} marker 
+        //         and the type is ${this.type}`)
+        //     }
+        // }
+
+        // //instance of class
+        // let marker1= new Marker("perm", "blue", "square")
+        // console.log(marker1)
+        // marker1.writing()
+
+        // let marker2=new Marker("temp", "red", "rounded")
+        // console.log(marker2)
+        // marker2.writing()
+
+
+        // 
+
+        // class Person{
+        //     name
+        //     age
+        //     #salary //private fields
+        //     constructor(name,age,salary){
+        //         this.name=name
+        //         this.age=age
+        //         this.#salary=salary
+        //     }
+
+        //     details(){
+        //         console.log(`name: ${this.name}, age: ${this.age}, salary: ${this.#salary}`)
+        //     }
+
+        //     get salary(){
+        //         return this.#salary
+        //     }
+
+        //     set newsal(sal){
+        //         this.#salary=sal
+        //     }
+        // }
+        // let person1=new Person("rahul", 25, 50000)
+        // person1.age=22
+        // person1.newsal=100000
+    
+        // console.log(person1.age)
+        // person1.details()
+        // console.log(person1.salary)
+
+        class Animal{
+            height
+            weight
+            constructor(height, weight){
+                this.height = height
+                this.weight = weight
+            }
+
+        }
+
+        // let animal1=new Animal("10feet", "100kgs")
+        // console.log(animal1)
+        class Dog extends Animal{
+            voice
+            food
+            usage
+            constructor(height,weight,voice,food,usage){
+                super(height,weight)
+                this.voice=voice
+                this.food=food
+                this.usage=usage
+            }
+        }
+
+        let dog1=new Dog("4feet", "40kgs", "bow", "chicken", "secure and play")
+        console.log(dog1)
+
+        
+    </script>
+
+
+    
+</body>
+</html>
