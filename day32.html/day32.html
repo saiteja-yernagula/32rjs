@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        oops - 
+        class 
+        constructor 
+        object
+
+        encapsulation- private fields , get and setters
+        inheritance- acquiring prop and methods from superclass to sub class
+                   extends , super
+        polymorphism
+
+        
+        
+        */ 
+
+        // class Animal{
+        //     height
+        //     weight
+        //     constructor(height,weight){
+        //         this.height = height
+        //         this.weight = weight
+        //     }
+
+        //     details(){
+        //         console.log(`height is ${this.height} and weight is ${this.weight}`)
+        //     }
+        // }
+
+        // class Dog extends Animal{
+        //     type
+        //     food
+        //     usage
+        //     constructor(height,weight,type,food,usage){
+        //         super(height,weight)
+        //         this.type=type
+        //         this.food=food
+        //         this.usage=usage
+        //     }
+
+        //     details(){
+        //         console.log(`height is ${this.height} and weight is ${this.weight} and type is ${this.type} and food is ${this.food} and usage is ${this.usage}`)
+        //     }
+
+
+        // }
+
+        // let dog1=new Dog("4feet", "40kgs", "lab", "chicken", "guard")
+        // console.log(dog1)
+        // dog1.details()
+
+    
+
+        /*
+        spread operator
+        used to expand elements of an iterable 
+        (like arrays, strings, or objects) into
+         individual elements. 
+
+         spread operator is used to create deep copy
+         it is denoted by ...
+         used to spread objects,arrays and strings
+        
+        rest operator
+
+        
+         */ 
+        // let a=["html", "css", "js"]
+        // let c=["java", "python"]
+        // let b=[...a,...c]
+
+       
+        
+        // console.log(a)
+        // console.log(b)
+
+        // function fun(a,b,c,d){
+        //     console.log(a,b,c,d)
+        // }
+        // let arr=[1,2]
+        // let arr2=[3,4]
+
+        // // fun(...arr,...arr2)
+        // let obj={
+        //     name:"john",
+        //     age:25
+        // }
+
+        // let b={...obj}
+        // b.name="jane"
+
+        // console.log(b)
+        // console.log(obj)
+
+        // let str="hello world"
+        // let newstr=[...str]
+        // newstr[0]='j'
+        // console.log(newstr)
+        // console.log(str)
+
+
+        function fun(a,b,...arr){
+            console.log(arr)
+        }
+        fun(1,2,3,4,5,6,7)
+
+    </script>
+</body>
+</html>
